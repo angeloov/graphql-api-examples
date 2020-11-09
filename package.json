@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/server",
-    "compile": "tsc && node ./dist/server",
-    "dev": "./node_modules/nodemon/bin/nodemon.js -e tsc --exec \"npm run compile\""
+    "dev": "nodemon dist/server"
   },
   "author": "",
   "license": "ISC",

@@ -2,14 +2,15 @@ import { gql } from "apollo-server";
 
 const typeDefs = gql`
   type Query {
-    books: [Book]
+    allBooks: [Book]
+    book(id: ID): Book
   }
 
   type Book {
-    title: String
-    yearOfPublishment: Int
-    ISBN: String
-    author: String
+    title: String!
+    yearOfPublishment: Int!
+    ISBN: String!
+    author: String!
   }
 `;
 
