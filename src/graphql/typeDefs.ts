@@ -8,7 +8,7 @@ const typeDefs = gql`
   type Book {
     title: String
     yearOfPublishment: Int
-    ISBN: Int
+    ISBN: String
     author: String
   }
 `;
