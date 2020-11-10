@@ -7,10 +7,17 @@ const typeDefs = gql`
   }
 
   type Book {
+    id: ID
     title: String!
     yearOfPublishment: Int!
     ISBN: String!
-    author: String!
+    author: Author
+  }
+
+  type Author {
+    id: ID!
+    firstname: String!
+    lastname: String!
   }
 `;
 
