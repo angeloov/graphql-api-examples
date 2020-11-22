@@ -1,7 +1,7 @@
 import { ApolloServer } from "apollo-server";
 
-import joinMonsterAdapt from "join-monster-graphql-tools-adapter";
 import { makeExecutableSchema } from "graphql-tools";
+import joinMonsterAdapt from "join-monster-graphql-tools-adapter";
 import joinMonsterMetadata from "./graphql/joinMonsterMetadata";
 
 import typeDefs from "./graphql/typeDefs";

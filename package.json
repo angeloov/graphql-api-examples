@@ -1,11 +1,12 @@
 {
-  "name": "graphql-2020",
+  "name": "graphql-api-2020",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node dist/server",
-    "dev": "nodemon dist/server"
+    "build": "tsc -w",
+    "dev": "nodemon -w ./ -e ts,json --exec \"tsc && node dist/server.js\""
   },
   "author": "",
   "license": "ISC",
