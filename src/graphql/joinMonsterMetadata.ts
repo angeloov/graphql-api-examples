@@ -31,7 +31,7 @@ export default {
       yearOfPublishment: {
         sqlColumn: "year",
       },
-      author: {
+      authors: {
         junction: {
           // name the table that holds the two foreign keys
           sqlTable: "books_authors",

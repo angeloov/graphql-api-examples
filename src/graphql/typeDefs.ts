@@ -11,7 +11,7 @@ const typeDefs = gql`
     title: String!
     yearOfPublishment: Int!
     ISBN: String!
-    author: Author
+    authors: [Author!]
   }
 
   type Author {
