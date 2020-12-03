@@ -6,21 +6,22 @@
   "scripts": {
     "start": "node dist/server",
     "build": "tsc -w",
-    "dev": "nodemon -w ./ -e ts,json --exec \"tsc && node dist/server.js\""
+    "dev": "nodemon -w ./ -e ts,json --exec \"node dist/server.js\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^2.12.1",
     "apollo-server": "^2.19.0",
     "express": "^4.17.1",
     "graphql": "^15.4.0",
     "graphql-server-express": "^1.4.1",
     "graphql-tools": "^7.0.1",
     "join-monster": "^2.1.2",
-    "join-monster-graphql-tools-adapter": "^0.1.0",
-    "pg": "^8.4.2"
+    "join-monster-graphql-tools-adapter": "^0.1.0"
   },
   "devDependencies": {
+    "@prisma/cli": "^2.12.1",
     "nodemon": "^2.0.6"
   }
 }

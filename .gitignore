@@ -3,3 +3,5 @@
 
 # compiled javascript
 /dist
+
+/prisma/.env

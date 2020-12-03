@@ -16,6 +16,10 @@ export default {
       lastname: {
         sqlColumn: "lastname",
       },
+      fullname: {
+        sqlDeps: ["firstname", "lastname"], // It depends on these columns
+        resolve: (author: any) => `${author.firstname} ${author.lastname}`, // Compute the lastname
+      },
     },
   },
   Book: {

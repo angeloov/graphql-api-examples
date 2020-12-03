@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model authors {
+  id               Int             @id @default(autoincrement())
+  firstname        String?
+  lastname         String?
+  // books_authors books_authors[]
+}
+
+model books {
+  id               Int             @id @default(autoincrement())
+  title            String?
+  isbn             String?
+  year             Int?
+  // books_authors books_authors[]
+}
+
+// The underlying table does not contain a valid unique identifier and can therefore currently not be handled.
+// model books_authors {
+  // book_id   Int
+  // author_id Int
+  // authors   authors @relation(fields: [author_id], references: [id])
+  // books     books   @relation(fields: [book_id], references: [id])
+// }
